@@ -1,0 +1,8 @@
+[
+  {"tenure_months": 3, "monthly_charges": 105.0, "num_products": 1, "support_calls": 5, "late_payments": 3,
+   "senior_citizen": 0, "usage_gb": 10.0, "contract": "Month-to-month", "internet_service": "Fiber",
+   "payment_method": "Electronic check"},
+  {"tenure_months": 60, "monthly_charges": 55.0, "num_products": 4, "support_calls": 0, "late_payments": 0,
+   "senior_citizen": 0, "usage_gb": 150.0, "contract": "Two year", "internet_service": "DSL",
+   "payment_method": "Credit card"}
+]

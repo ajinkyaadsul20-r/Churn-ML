@@ -1,0 +1,54 @@
+{
+  "package_version": "1.0.0",
+  "trained_at": "2026-10-20T17:05:25+00:00",
+  "model_family": "logistic_regression",
+  "calibration": "sigmoid",
+  "threshold": 0.08,
+  "features": [
+    "tenure_months",
+    "monthly_charges",
+    "num_products",
+    "support_calls",
+    "late_payments",
+    "senior_citizen",
+    "usage_gb",
+    "contract",
+    "internet_service",
+    "payment_method"
+  ],
+  "train_rows": 16000,
+  "test_rows": 4000,
+  "data_hash": "f4339f87968a97c8",
+  "python": "3.12.3",
+  "sklearn": "1.8.0",
+  "numpy": "2.4.4",
+  "cv_results": {
+    "logistic_regression": {
+      "roc_auc_mean": 0.8348865782105218,
+      "roc_auc_std": 0.00683376436519083,
+      "pr_auc_mean": 0.6097710200975135
+    },
+    "random_forest": {
+      "roc_auc_mean": 0.8247832167832169,
+      "roc_auc_std": 0.00787292348528593,
+      "pr_auc_mean": 0.5912781584474528
+    },
+    "hist_gradient_boosting": {
+      "roc_auc_mean": 0.8348627710317851,
+      "roc_auc_std": 0.007482636966581905,
+      "pr_auc_mean": 0.6110919590498053
+    }
+  },
+  "permutation_importance": {
+    "tenure_months": 0.1197825958561836,
+    "monthly_charges": 0.028897666492363028,
+    "num_products": 0.0071326191206741996,
+    "support_calls": 0.03169451923173874,
+    "late_payments": 0.015040601217820382,
+    "senior_citizen": 0.0019692707050364524,
+    "usage_gb": 0.023228621517709082,
+    "contract": 0.09843861415662256,
+    "internet_service": 0.00672919988879137,
+    "payment_method": 0.003848364499107526
+  }
+}

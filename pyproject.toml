@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "churn-ml"
+version = "1.0.0"
+description = "End-to-end customer churn prediction: training, cost-optimal decisioning, evaluation and REST serving."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "numpy>=1.26", "pandas>=2.1", "scikit-learn>=1.4", "matplotlib>=3.8",
+  "joblib>=1.3", "pyyaml>=6.0", "fastapi>=0.110", "uvicorn[standard]>=0.29", "pydantic>=2.6",
+]
+
+[project.scripts]
+churn-ml = "churn_ml.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
